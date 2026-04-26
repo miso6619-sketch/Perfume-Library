@@ -70,4 +70,4 @@
 
 ## 🔗 사이트
 
-👉 배포 주소를 여기에 입력
+👉 https://miso6619-sketch.github.io/Perfume-Library/
