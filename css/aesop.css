@@ -23,6 +23,7 @@ a {
 #wrap {
     width: 100%;
     height: 100%;
+    background: #fffef2;
 }
 
 /* 공통 */
@@ -30,7 +31,7 @@ a {
     position: relative;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 24px 40px;
+    padding: 28px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,6 +47,10 @@ header {
     z-index: 100;
 }
 
+header .logo img {
+    display: block;
+}
+
 header .btn-mobile {
     display: none;
 }
@@ -57,8 +62,8 @@ header .btn-close {
 .gnb {
     display: flex;
     gap: 45px;
-    padding: 40px 40px;
-    font-size: 18px;
+    padding: 36px 40px;
+    font-size: 17px;
     color: #fff;
 }
 
@@ -73,33 +78,45 @@ header .btn-close {
 /* main visual */
 #main-visual {
     position: relative;
+    width: 100%;
+    height: 82vh;
+    min-height: 680px;
+    overflow: hidden;
+}
+
+#main-visual .main-bg {
+    width: 100%;
+    height: 100%;
 }
 
 #main-visual .main-bg img {
     display: block;
     width: 100%;
-    height: 80vh;
+    height: 100%;
     object-fit: cover;
 }
 
 #main-visual .main-title {
     position: absolute;
-    bottom: 380px;
-    left: 500px;
+    top: 40%;
+    left: 26%;
+    transform: translateY(-50%);
+    max-width: 520px;
     font-size: 17px;
-    line-height: 1.7;
+    line-height: 1.8;
     color: #fff;
-    letter-spacing: 2px;
+    letter-spacing: 1.8px;
+    word-break: keep-all;
 }
 
 .main-title .copy1 {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 /* section1 */
 .section1 {
     background: #fffef2;
-    padding: 80px 0;
+    padding: 130px 0 120px;
 }
 
 .section1-inner {
@@ -107,12 +124,12 @@ header .btn-close {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 80px;
+    gap: 110px;
 }
 
 .section1-inner img {
     display: block;
-    width: 400px;
+    width: 430px;
     height: auto;
     transition: transform 0.35s ease;
 }
@@ -125,22 +142,23 @@ header .btn-close {
     display: block;
     font-size: 15px;
     color: #9e7144;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 .section1-inner h3 {
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 500;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     letter-spacing: 0.04em;
 }
 
 .section1-inner p {
     font-size: 14px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 1.7;
     letter-spacing: 0.01em;
     color: #333;
+    word-break: keep-all;
 }
 
 .section1-inner .button {
@@ -150,8 +168,8 @@ header .btn-close {
 
 .section1-inner .button a {
     display: inline-block;
-    margin-top: 15px;
-    padding: 10px 28px;
+    margin-top: 24px;
+    padding: 11px 30px;
     font-size: 13px;
     background: #333;
     color: #fff;
@@ -167,29 +185,31 @@ header .btn-close {
 /* section2 */
 .section2 {
     background: #f6f5e8;
-    padding: 80px 0;
+    padding: 130px 0 150px;
 }
 
 .section2 h2 {
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 600;
     color: #9e7144;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 90px;
     letter-spacing: 0.12em;
 }
 
 .section2-inner {
+    width: 1400px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
-    gap: 150px;
+    gap: 140px;
     text-align: center;
     align-items: flex-end;
 }
 
 .section2-inner img {
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 36px;
     transition: transform 0.35s ease;
 }
 
@@ -202,7 +222,7 @@ header .btn-close {
 
 .section2-inner .new4 img {
     display: inline-block;
-    margin-bottom: -8px;
+    margin-bottom: 20px;
 }
 
 .section2-inner a:hover img {
@@ -214,15 +234,17 @@ header .btn-close {
     font-size: 15px;
     font-weight: 600;
     letter-spacing: 0.04em;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .section2 .section2-inner .new-text {
+    min-height: 58px;
     font-size: 14px;
     font-weight: 400;
     color: #333;
-    line-height: 1.4;
-    margin-bottom: 15px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+    word-break: keep-all;
 }
 
 .section2 .section2-inner .new-button a {
@@ -232,7 +254,7 @@ header .btn-close {
     background: #333;
     color: #fff;
     border-radius: 20px;
-    margin-top: 15px;
+    margin-top: 12px;
     transition: background 0.25s ease, transform 0.25s ease;
 }
 
@@ -244,7 +266,7 @@ header .btn-close {
 /* section3 */
 .section3 {
     background: #fffef2;
-    padding: 80px 0;
+    padding: 140px 0 130px;
 }
 
 .section3-inner {
@@ -253,28 +275,35 @@ header .btn-close {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    gap: 120px;
+}
+
+.section3 .call-text {
+    width: 420px;
 }
 
 .section3 .call-text span {
     display: block;
     font-size: 15px;
     color: #9e7144;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 .section3 .call-text h2 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     letter-spacing: 0.04em;
 }
 
 .section3 .call-text p {
     display: inline-block;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
+    font-size: 15px;
+    line-height: 1.7;
     font-weight: 400;
     color: #333;
+    word-break: keep-all;
 }
 
 .section3 .call-text li a {
@@ -284,7 +313,7 @@ header .btn-close {
     background: #333;
     color: #fff;
     border-radius: 20px;
-    margin-top: 15px;
+    margin-top: 10px;
     transition: background 0.25s ease, transform 0.25s ease;
 }
 
@@ -293,10 +322,16 @@ header .btn-close {
     transform: translateY(-2px);
 }
 
+.section3 .call-img img {
+    display: block;
+    width: 640px;
+    height: auto;
+}
+
 /* section4 */
 .section4 {
     background: #fffef2;
-    padding: 60px 0;
+    padding: 90px 0 130px;
 }
 
 .section4-inner {
@@ -313,6 +348,7 @@ header .btn-close {
 
 .section4-inner .story a {
     display: block;
+    width: 25%;
     transition: transform 0.3s ease;
 }
 
@@ -326,10 +362,11 @@ header .btn-close {
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.02em;
-    margin-bottom: 5px;
-    padding: 10px 100px 0 0;
+    margin-bottom: 8px;
+    padding: 14px 100px 0 0;
     border-top: 1px solid #6c6c6c;
     transition: color 0.25s ease, border-color 0.25s ease;
+    white-space: nowrap;
 }
 
 .section4-inner .story p {
@@ -360,13 +397,14 @@ header .btn-close {
 /* footer */
 footer {
     background: #333333;
-    padding: 40px 0 60px 0;
+    padding: 50px 0 70px;
     color: #cfcaca;
     position: relative;
     font-weight: 400;
 }
 
 .footer-inner {
+    position: relative;
     width: 1120px;
     margin: 0 auto;
 }
@@ -381,14 +419,14 @@ footer .footer-logo .logo {
     font-size: 15px;
     line-height: 20px;
     font-family: "Suisse Int'l Mono";
-    margin-top: 40px;
+    margin-top: 42px;
     letter-spacing: -2px;
 }
 
 footer .sns {
     position: absolute;
-    top: 40px;
-    right: 450px;
+    top: 0;
+    right: 0;
     display: flex;
     gap: 30px;
 }
