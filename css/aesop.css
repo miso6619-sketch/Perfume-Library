@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +15,11 @@
 *::before,
 *::after {
     box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 li {
@@ -22,13 +33,15 @@ a {
 
 #wrap {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     background: #fffef2;
+    overflow-x: hidden;
 }
 
 /* 공통 */
 .inner {
     position: relative;
+    width: 100%;
     max-width: 1280px;
     margin: 0 auto;
     padding: 28px 40px;
@@ -90,7 +103,6 @@ header .btn-close {
 }
 
 #main-visual .main-bg img {
-    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -115,12 +127,14 @@ header .btn-close {
 
 /* section1 */
 .section1 {
+    width: 100%;
     background: #fffef2;
     padding: 130px 0 120px;
 }
 
 .section1-inner {
-    width: 1120px;
+    width: 100%;
+    max-width: 1120px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -128,7 +142,6 @@ header .btn-close {
 }
 
 .section1-inner img {
-    display: block;
     width: 430px;
     height: auto;
     transition: transform 0.35s ease;
@@ -162,7 +175,6 @@ header .btn-close {
 }
 
 .section1-inner .button {
-    list-style: none;
     padding: 0;
 }
 
@@ -184,6 +196,7 @@ header .btn-close {
 
 /* section2 */
 .section2 {
+    width: 100%;
     background: #f6f5e8;
     padding: 130px 0 150px;
 }
@@ -198,30 +211,31 @@ header .btn-close {
 }
 
 .section2-inner {
-    width: 1400px;
+    width: 100%;
+    max-width: 1400px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    gap: 140px;
+    gap: 100px;
     text-align: center;
     align-items: flex-end;
 }
 
 .section2-inner img {
-    display: block;
-    margin-bottom: 36px;
+    margin: 0 auto 36px;
     transition: transform 0.35s ease;
 }
 
 .section2-inner .new1 img,
 .section2-inner .new2 img,
-.section2-inner .new3 img {
-    display: inline-block;
-    margin-left: 50px;
+.section2-inner .new3 img,
+.section2-inner .new4 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section2-inner .new4 img {
-    display: inline-block;
     margin-bottom: 20px;
 }
 
@@ -265,12 +279,14 @@ header .btn-close {
 
 /* section3 */
 .section3 {
+    width: 100%;
     background: #fffef2;
     padding: 140px 0 130px;
 }
 
 .section3-inner {
-    width: 1400px;
+    width: 100%;
+    max-width: 1400px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -323,19 +339,20 @@ header .btn-close {
 }
 
 .section3 .call-img img {
-    display: block;
     width: 640px;
     height: auto;
 }
 
 /* section4 */
 .section4 {
+    width: 100%;
     background: #fffef2;
     padding: 90px 0 130px;
 }
 
 .section4-inner {
-    width: 1400px;
+    width: 100%;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -396,6 +413,7 @@ header .btn-close {
 
 /* footer */
 footer {
+    width: 100%;
     background: #333333;
     padding: 50px 0 70px;
     color: #cfcaca;
@@ -405,7 +423,8 @@ footer {
 
 .footer-inner {
     position: relative;
-    width: 1120px;
+    width: 100%;
+    max-width: 1120px;
     margin: 0 auto;
 }
 

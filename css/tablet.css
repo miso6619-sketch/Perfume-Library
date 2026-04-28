@@ -54,6 +54,7 @@
 
 .section2-inner {
     width: 100%;
+    max-width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 100px 70px;
@@ -84,6 +85,7 @@
 
 .section3-inner {
     width: 100%;
+    max-width: 100%;
     gap: 70px;
 }
 
@@ -107,6 +109,7 @@
 
 .section4-inner {
     width: 100%;
+    max-width: 100%;
 }
 
 .section4-inner .story {
@@ -126,6 +129,7 @@
 /* footer */
 .footer-inner {
     width: 100%;
+    max-width: 100%;
     padding: 0 40px;
 }
 
