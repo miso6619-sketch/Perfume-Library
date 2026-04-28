@@ -50,6 +50,7 @@
 - CSS
 - JavaScript
 - jQuery
+- Photoshop
 
 ---
 
@@ -70,4 +71,4 @@
 
 ## 🔗 사이트
 
-👉 https://miso6619-sketch.github.io/Perfume-Library/
+👉 [Perfume Library]https://miso6619-sketch.github.io/Perfume-Library/
